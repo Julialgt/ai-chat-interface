@@ -1,0 +1,84 @@
+:root {
+  /* Typography */
+  --font-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'SF Pro Text',
+    'Segoe UI', sans-serif;
+
+  /* Spacing (8px grid) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  /* Radius */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+
+  /* Theme (dark default) */
+  --bg: #0b0f1a;
+  --panel: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --border: rgba(255, 255, 255, 0.08);
+  --accent: #3b82f6;
+  /* Derived for existing styles */
+  --bg-app: var(--bg);
+  --bg-sidebar: var(--panel);
+  --panel-strong: var(--panel);
+  --border-subtle: var(--border);
+  --text-primary: var(--text);
+  --text-muted: var(--muted);
+  --accent-soft: rgba(59, 130, 246, 0.15);
+  --accent-hover: #2563eb;
+  --bg-message-user: #1d1d32;
+  --bg-message-assistant: #10101e;
+  --panel-dim: rgba(7, 7, 20, 0.92);
+  --border-strong: rgba(255, 255, 255, 0.15);
+
+  /* Depth */
+  --shadow-md: 0 18px 45px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 28px 80px rgba(0, 0, 0, 0.5);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-fast: 120ms;
+  --dur: 160ms;
+}
+
+[data-theme="light"] {
+  --bg: #f6f7f8;
+  --panel: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --border: rgba(15, 23, 42, 0.10);
+  --accent: #4b5563;
+
+  /* Derived for existing styles */
+  --bg-app: var(--bg);
+  --bg-sidebar: var(--panel);
+  --panel-strong: var(--panel);
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --text-primary: var(--text);
+  --text-muted: var(--muted);
+
+  /* Neutral gray (no blue) in light mode */
+  --accent-soft: rgba(15, 23, 42, 0.08);
+  --accent-hover: #374151;
+
+  /* Message bubbles */
+  --bg-message-user: #f1f3f5;
+  --bg-message-assistant: #ffffff;
+
+  /* Glass / dim panels */
+  --panel-dim: rgba(17, 24, 39, 0.03);
+
+  --border-strong: rgba(15, 23, 42, 0.14);
+
+  /* Depth */
+  --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 18px 55px rgba(15, 23, 42, 0.10);
+}
+
